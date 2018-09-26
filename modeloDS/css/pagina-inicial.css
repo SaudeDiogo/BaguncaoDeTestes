@@ -6,7 +6,7 @@ produção    https://cdn.rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/css/pagin
 dev         https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/css/pagina-inicial.css
 **************************/
 
-body.modeloDS .pagina-inicial {
+body.noteditmode.modeloDS .pagina-inicial {
     margin: 0;
     border: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body.modeloDS .pagina-inicial {
     justify-content: flex-start;
     font: 115% 'Roboto', sans-serif;
 }
-body.modeloDS .pagina-inicial::after {
+body.noteditmode.modeloDS .pagina-inicial::after {
     background-image: url(../../img/ds/pagina-inicial/textura-fundo.svg);
     background-repeat: repeat;
     position: absolute;
@@ -32,14 +32,14 @@ body.modeloDS .pagina-inicial::after {
     top: 0;
     z-index: 0;
 }
-body.modeloDS .pagina-inicial header {
+body.noteditmode.modeloDS .pagina-inicial header {
     width: 100%;
     padding: 3em 0;
 }
 
 /*logo do ead iesb*/
 
-body.modeloDS .pagina-inicial header .img-logo {
+body.noteditmode.modeloDS .pagina-inicial header .img-logo {
     background-image: url(../img/ds/ead-iesb-logo.svg);
     background-repeat: no-repeat;
     position: relative;
@@ -49,7 +49,7 @@ body.modeloDS .pagina-inicial header .img-logo {
 
 /*  titulo ao lado da logo do iesb*/
 
-body.modeloDS .pagina-inicial header h2 {
+body.noteditmode.modeloDS .pagina-inicial header h2 {
     font-family: 'Roboto' sans-serif;
     transform: translate(19em, 4.2em);
     position: absolute;
@@ -59,7 +59,7 @@ body.modeloDS .pagina-inicial header h2 {
     font-weight: 300;
     top: 0;
 }
-body.modeloDS .pagina-inicial header h2::before {
+body.noteditmode.modeloDS .pagina-inicial header h2::before {
     content: "| ";
     color: #ffffff;
     font-weight: 400;
@@ -68,20 +68,19 @@ body.modeloDS .pagina-inicial header h2::before {
     width: 1em;
     top: 0;
 }
-body.modeloDS .pagina-inicial #editmodeWrapper,
-body.modeloDS .pagina-inicial #content{
+body.noteditmode.modeloDS .pagina-inicial #editmodeWrapper,
+body.noteditmode.modeloDS .pagina-inicial #content{
     height: 100%;
 }
-body.modeloDS .pagina-inicial #containerdiv {
+body.noteditmode.modeloDS .pagina-inicial #containerdiv {
     background: none;
     border: none;
-    z-index: 3;
     height: inherit;
 }
 
 /*area dos cartoes*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,7 +88,6 @@ body.modeloDS .pagina-inicial ul#content_listContainer {
     align-items: center;
     align-content: space-around;
     height: inherit;
-    z-index: 1;
     background: transparent;
 }
 
@@ -101,7 +99,7 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
 
 /*cartao*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
     background-color: #ffffff;
     max-width: 11em;
     width: 100%;
@@ -119,7 +117,7 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
 
 /*passar mouse sobre o cartao*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:hover {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:hover {
     cursor: pointer;
     box-shadow: 0 0.2em 1em #464343;
     transform: scale(1.05, 1.05);
@@ -127,9 +125,8 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:hover {
 
 /*conteudo cartao*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix {
     background-color: #fff;
-    z-index: 3;
     height: 11.5em;
     transform: translateY(-0.5em);
     width: 90%;
@@ -144,13 +141,13 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
 
 /*esconde icones padrao*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix img[title="item vinculado"] {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix img[title="item vinculado"] {
     display: none;
 }
 
 /*imagem do cartao*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3::before {
     height: 7em;
     width: 100%;
     content: '';
@@ -163,7 +160,7 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
 
 /*titulo do cartao*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span {
     color: #615d5d;
     font-size: 1em;
     font-weight: 400;
@@ -177,7 +174,7 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
 
 /*linha vermelha no fim do cartao*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span::after {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span::after {
     position: absolute;
     content: "";
     height: 0.15em;
@@ -187,11 +184,11 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
     background-color: #cc0000;
     transform: translate(1em, 1em);
 }
-body.modeloDS .pagina-inicial .cartao {}
-body.modeloDS .pagina-inicial .cartao:hover {}
-body.modeloDS .pagina-inicial .conteudo-cartao {}
-body.modeloDS .pagina-inicial .img-cartao {}
-body.modeloDS .pagina-inicial .img-cartao::after {
+body.noteditmode.modeloDS .pagina-inicial .cartao {}
+body.noteditmode.modeloDS .pagina-inicial .cartao:hover {}
+body.noteditmode.modeloDS .pagina-inicial .conteudo-cartao {}
+body.noteditmode.modeloDS .pagina-inicial .img-cartao {}
+body.noteditmode.modeloDS .pagina-inicial .img-cartao::after {
     content: '';
     height: 0.15em;
     background-color: #cc0000;
@@ -200,7 +197,7 @@ body.modeloDS .pagina-inicial .img-cartao::after {
     left: 0;
     bottom: 0;
 }
-body.modeloDS .pagina-inicial .label {
+body.noteditmode.modeloDS .pagina-inicial .label {
     align-self: center;
     transform: translate(0, -1em);
     color: #fff;
@@ -212,27 +209,27 @@ body.modeloDS .pagina-inicial .label {
 
 /*imagem dos cartoes*/
 
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.aulas::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.aulas::before {
     background-image: url(../../img/ds/pagina-inicial/aulas.jpg)
 }
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.calendario::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.calendario::before {
     background-image: url(../../img/ds/pagina-inicial/calendario.jpg)
 }
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.novidades::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.novidades::before {
     background-image: url(../../img/ds/pagina-inicial/novidades.jpg)
 }
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.forum-de-duvidas::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.forum-de-duvidas::before {
     background-image: url(../../img/ds/pagina-inicial/forum-de-duvidas.jpg)
 }
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.encontro-virtual::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.encontro-virtual::before {
     background-image: url(../../img/ds/pagina-inicial/encontro-virtual.jpg)
 }
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.biblioteca-virtual::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.biblioteca-virtual::before {
     background-image: url(../../img/ds/pagina-inicial/biblioteca-virtual.jpg)
 }
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.notas::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.notas::before {
     background-image: url(../../img/ds/pagina-inicial/notas.jpg)
 }
-body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.avaliacoes::before {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.avaliacoes::before {
     background-image: url(../../img/ds/pagina-inicial/avaliacoes.jpg)
 }

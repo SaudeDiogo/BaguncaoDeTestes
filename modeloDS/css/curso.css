@@ -19,21 +19,20 @@ body.ineditmode.modeloDS {}
 body.noteditmode.modeloDS .locationPane {
     padding: 0;
 }
-body.modeloDS {}
-body.modeloDS #pageTitleBar,
-body.modeloDS #pageTitleHeader,
-body.modeloDS #pageTitleText {
+body.noteditmode.modeloDS #pageTitleBar,
+body.noteditmode.modeloDS #pageTitleHeader,
+body.noteditmode.modeloDS #pageTitleText {
     text-align: center;
     width: 100%;
 }
-body.modeloDS #pageTitleText span {
+body.noteditmode.modeloDS #pageTitleText span {
     color: #ffffff !important;
     width: 100%;
     text-align: center;
     font: 2em 'Roboto Slab', serif;
 }
-body.modeloDS #pageTitleText span::before,
-body.modeloDS #pageTitleText span::after {
+body.noteditmode.modeloDS #pageTitleText span::before,
+body.noteditmode.modeloDS #pageTitleText span::after {
     content: '';
     display: block;
     width: 142px;
