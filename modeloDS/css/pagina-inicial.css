@@ -82,7 +82,8 @@ body.modeloDS .pagina-inicial header h2::before {
     width: 1em;
     top: 0;
 }
-body.modeloDS .pagina-inicial #content {
+body.modeloDS .pagina-inicial #content,
+body.modeloDS .pagina-inicial #content #editmodeWrapper {
     height: 100%;
 }
 body.modeloDS .pagina-inicial #containerdiv {
