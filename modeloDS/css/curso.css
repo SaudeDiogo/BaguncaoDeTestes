@@ -46,3 +46,44 @@ body.modeloDS #pageTitleText span::after {
 }
 body.modeloDS {}
 body.modeloDS {}
+
+
+
+
+.pagina-inicial {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: flex;
+	flex-wrap: nowrap;
+    padding-bottom: 3em;
+    background: #bd2429;
+	align-items: stretch;
+	align-content: stretch;
+	flex-direction: column;
+	justify-content: flex-start;
+    font: 115% 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.pagina-inicial header {
+    width: 100%;
+}
+
+.pagina-inicial header .img-logo{
+    background-image: url(../img/ds/ead-iesb-logo.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 3em;
+    margin: 1.5em;
+}
+
+.pagina-inicial header h2::before{
+    color: #ffffff;
+    font-size: 1em;
+    font-family: 'Roboto' sans-serif;
+    transform: translate(0em,0em);
+    position: absolute;
+    height: 1em;
+    width: 1em;
+}
