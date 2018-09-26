@@ -2,10 +2,10 @@
 Criado por Diogo Saúde
 Css para Pagina Inicial
 Modelo DS
-v1.0 - https://cdn.rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/css/pagina-inicial.css
+produção    https://cdn.rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/css/pagina-inicial.css
+dev         https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/css/pagina-inicial.css
 **************************/
 
-body.noteditmode {}
 body.modeloDS .pagina-inicial {
     margin: 0;
     border: 0;
@@ -18,7 +18,8 @@ body.modeloDS .pagina-inicial {
     flex-wrap: nowrap;
     background: #bd2429;
     -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
+    -moz-box-align:stretch;
+    -ms-box-align: stretch;
     align-items: stretch;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
@@ -59,6 +60,7 @@ body.modeloDS .pagina-inicial header .img-logo {
 }
 
 /*  titulo ao lado da logo do iesb*/
+
 body.modeloDS .pagina-inicial header h2 {
     font-family: 'Roboto' sans-serif;
     -webkit-transform: translate(19em, 4.2em);
@@ -91,6 +93,7 @@ body.modeloDS .pagina-inicial #containerdiv {
 }
 
 /*area dos cartoes*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112,11 +115,15 @@ body.modeloDS .pagina-inicial ul#content_listContainer {
     z-index: 1;
     background: transparent;
 }
+
 /*esconde o ultimo cartao, que é o link para aulas*/
+
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:last-child {
     display: none;
 }
+
 /*cartao*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
     background-color: #ffffff;
     max-width: 11em;
@@ -148,7 +155,9 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
     transition: transform .2s, -webkit-transform .2s;
     border: 0;
 }
+
 /*passar mouse sobre o cartao*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:hover {
     cursor: pointer;
     -webkit-box-shadow: 0 0.2em 1em #464343;
@@ -157,7 +166,9 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:hover {
     -ms-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
 }
+
 /*conteudo cartao*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix {
     background-color: #fff;
     z-index: 3;
@@ -185,11 +196,15 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
     -ms-flex-line-pack: stretch;
     align-content: stretch;
 }
+
 /*esconde icones padrao*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix img[title="item vinculado"] {
     display: none;
 }
+
 /*imagem do cartao*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3::before {
     height: 7em;
     width: 100%;
@@ -200,7 +215,9 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 /*titulo do cartao*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span {
     color: #615d5d;
     font-size: 1em;
@@ -212,7 +229,9 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
     width: 100%;
     text-decoration: none;
 }
+
 /*linha vermelha no fim do cartao*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span::after {
     position: absolute;
     content: "";
@@ -251,6 +270,7 @@ body.modeloDS .pagina-inicial .label {
     border-radius: 1em;
     background-color: #cc0000;
 }
+/*imagem dos cartoes*/
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.aulas::before {
     background-image: url(../../img/ds/pagina-inicial/aulas.jpg)
 }
