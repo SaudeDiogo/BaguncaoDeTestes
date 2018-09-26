@@ -5,8 +5,8 @@ Modelo DS
 v1.0
 **************************/
 
-//************************
 // inserindo modelo-DS em todas as paginas da turma ModeloDS
+//
 var css = document.createElement('link');
 css.setAttribute('rel', 'stylesheet');
 css.setAttribute('type', 'text/css');
