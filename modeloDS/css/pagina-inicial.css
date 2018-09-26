@@ -11,24 +11,12 @@ body.modeloDS .pagina-inicial {
     border: 0;
     padding: 0;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     background: #bd2429;
-    -webkit-box-align: stretch;
-    -moz-box-align:stretch;
-    -ms-box-align: stretch;
     align-items: stretch;
-    -ms-flex-line-pack: stretch;
     align-content: stretch;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     font: 115% 'Roboto', sans-serif;
 }
@@ -63,8 +51,6 @@ body.modeloDS .pagina-inicial header .img-logo {
 
 body.modeloDS .pagina-inicial header h2 {
     font-family: 'Roboto' sans-serif;
-    -webkit-transform: translate(19em, 4.2em);
-    -ms-transform: translate(19em, 4.2em);
     transform: translate(19em, 4.2em);
     position: absolute;
     color: #ffffff;
@@ -96,21 +82,11 @@ body.modeloDS .pagina-inicial #containerdiv {
 /*area dos cartoes*/
 
 body.modeloDS .pagina-inicial ul#content_listContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-line-pack: distribute;
     align-content: space-around;
     height: inherit;
     z-index: 1;
@@ -130,30 +106,14 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
     max-width: 11em;
     width: 100%;
     min-height: 14em;
-    -webkit-box-shadow: 0 .2em .6em #615d5d;
     box-shadow: 0 .2em .6em #615d5d;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-line-pack: stretch;
     align-content: stretch;
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    -o-transition: transform .2s;
     transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s;
     border: 0;
 }
 
@@ -161,10 +121,7 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
 
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:hover {
     cursor: pointer;
-    -webkit-box-shadow: 0 0.2em 1em #464343;
     box-shadow: 0 0.2em 1em #464343;
-    -webkit-transform: scale(1.05, 1.05);
-    -ms-transform: scale(1.05, 1.05);
     transform: scale(1.05, 1.05);
 }
 
@@ -174,27 +131,14 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
     background-color: #fff;
     z-index: 3;
     height: 11.5em;
-    -webkit-transform: translateY(-0.5em);
-    -ms-transform: translateY(-0.5em);
     transform: translateY(-0.5em);
     width: 90%;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
     align-items: stretch;
-    -ms-flex-line-pack: stretch;
     align-content: stretch;
 }
 
@@ -242,8 +186,6 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
     bottom: 0;
     background-color: #cc0000;
     transform: translate(1em, 1em);
-    -webkit-transform: translate(1em, 1em);
-    -ms-transform: translate(1em, 1em);
 }
 body.modeloDS .pagina-inicial .cartao {}
 body.modeloDS .pagina-inicial .cartao:hover {}
@@ -259,19 +201,17 @@ body.modeloDS .pagina-inicial .img-cartao::after {
     bottom: 0;
 }
 body.modeloDS .pagina-inicial .label {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
     align-self: center;
     transform: translate(0, -1em);
-    -webkit-transform: translate(0, -1em);
-    -ms-transform: translate(0, -1em);
     color: #fff;
     font-size: .4em;
     line-height: 2.5em;
     border-radius: 1em;
     background-color: #cc0000;
 }
+
 /*imagem dos cartoes*/
+
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.aulas::before {
     background-image: url(../../img/ds/pagina-inicial/aulas.jpg)
 }
