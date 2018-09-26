@@ -188,6 +188,7 @@ body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item
 /*imagem do cartao*/
 body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3::before {
     height: 7em;
+    width: 100%;
     content: '';
     position: relative;
     background-color: #d1d1d1;
