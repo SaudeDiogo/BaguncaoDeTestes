@@ -1,0 +1,325 @@
+/*************************
+Criado por Diogo Saúde
+Css para Plano de Ensino
+Padrão 2018
+v1.0
+**************************/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto+Slab:100,300,400,700|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+/*
+Para usar uma das fontes importadas
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/*classes globais*/
+body.noteditmode div#_885727_1{
+    display: none;
+} 
+
+.plano-de-ensino {
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font: 115% 'Roboto', sans-serif;
+    padding-bottom: 3em;
+}
+
+/*titulo plano de ensino*/
+.plano-de-ensino header h1 {
+    color: #ffffff;
+    padding: 1em .5em;
+    font: 3em 'Roboto Slab', serif;
+}
+
+/*nome da disciplina*/
+.plano-de-ensino header h2 {
+    margin-bottom: 2em;
+    color:#615d5d;
+    text-align: left;
+    font: 2em 'Roboto Slab', serif;
+}
+
+/*carga horaria e modalidade*/
+.plano-de-ensino header h3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.5em 2em;
+    color: #961b1b;
+    font-weight: 600;
+    transform: translateY(2em);
+}
+
+/*barra de titulo plano de ensino*/
+.plano-de-ensino .barra-de-titulo{
+    width: 80px;
+    height: 3px;
+    max-width: 20%;
+    min-height: auto;
+    min-width: 80px;
+    margin-top: 1em;
+    border-radius: 500px;
+    background-image: -webkit-linear-gradient(45deg, #ed1c24 13%, #660808), -webkit-linear-gradient(270deg, #2e3192, #2e3192);
+    background-image: linear-gradient(45deg, #ed1c24 13%, #660808), linear-gradient(180deg, #2e3192, #2e3192);
+}
+/*link conteudista*/
+.plano-de-ensino a.conteudista {  
+    display: block;
+    position: absolute;
+    color: #878787;
+    text-align: right;
+    padding: 0.5em 1em;
+    font: 1em 'Roboto Slab', serif;
+    text-decoration: none;
+    top: 0;
+    right: 0;
+}
+.plano-de-ensino a.conteudista:hover {
+    color: #961b1b;
+}
+.plano-de-ensino a.conteudista::before{
+    
+    font: .7em 'Roboto Slab', serif;
+    content: "Conteudista"
+}
+
+/*estilos do conteudo*/
+.plano-de-ensino  {
+    padding: 0;
+}
+.plano-de-ensino .conteudo h4 {
+    font: 1.3em 'Roboto Slab', serif;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+.plano-de-ensino .conteudo p{
+    margin-top: .5em;
+    padding: 0 1em;
+    font: 1em 'Roboto', sans-serif;
+    line-height: 1.5em;
+}
+
+.plano-de-ensino .conteudo .accordion {
+    font: 1.4em 'Roboto Slab', serif;
+    padding: .5em 1em;
+    transition: 0.5s;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+    color:#ffffff;
+    outline: none;
+    border: none;
+}
+.plano-de-ensino .conteudo .panel{
+    padding: 0 1em;
+    margin-bottom: .2em;
+    background-color: #ffffff;
+    max-height: 0;
+    font: 1em 'Roboto', sans-serif;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.plano-de-ensino .conteudo ul{
+    margin: .5em 0;
+    padding-left: 0;
+}
+.plano-de-ensino .conteudo .panel li {
+    position: relative;
+    font-weight: 700;
+    list-style: none;
+    font: 1.1em 'Roboto Slab', serif;
+    line-height: 1.5em;
+}
+.plano-de-ensino .conteudo .panel li > ul {
+    padding-left: 2em;
+}
+.plano-de-ensino .conteudo .panel li > ul > li {
+    font: .9em 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+.plano-de-ensino .conteudo .panel li > ul > li:last-child {
+    margin-bottom: 1em;
+}
+
+/*Competencia e habilidade*/
+.plano-de-ensino .conteudo .accordion:nth-child(2) {
+    background-image: -webkit-linear-gradient(45deg, rgba(49, 42, 108, .95), rgba(145, 45, 93, .85)),
+        url(../img/ds/overlay.png);
+    background-image: linear-gradient(45deg, rgba(49, 42, 108, .95),rgba(145, 45, 93, .85)),
+        url(../img/ds/overlay.png);
+    background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, 2px, cover;
+} 
+.plano-de-ensino .conteudo .competencia-e-habilidade li > ul > li::before {
+    content: "";
+    width: .3em;
+    background-color: rgba(145, 45, 93, .9);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-.5em, 0em);
+}
+.plano-de-ensino .conteudo .competencia-e-habilidade li > ul > li{
+    margin-top: .5em;
+}
+
+/*conteudo programatico*/
+.plano-de-ensino .conteudo .accordion:nth-child(4) {
+    background-image: -webkit-linear-gradient(225deg, rgba(252, 242, 0, .8),
+        rgba(237, 112, 28, .9)),
+        url(../img/ds/overlay.png);
+    background-image: linear-gradient(225deg, rgba(252, 242, 0, .8),
+        rgba(237, 112, 28, .9)),
+        url(../img/ds/overlay.png);
+    background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, 2px, cover;
+}
+.plano-de-ensino .conteudo .conteudo-programatico li > ul > li::before {
+    content: "";
+    width: .3em;
+    background-color: rgba(237, 112, 28, .9);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-.5em, 0em)
+}
+.plano-de-ensino .conteudo .conteudo-programatico li > ul > li{
+    margin-top: .5em;
+}
+
+/*desenvolvimento metodologico*/
+.plano-de-ensino .conteudo .accordion:nth-child(6) {
+    background-image: -webkit-linear-gradient(225deg, rgba(27, 255, 255, .8), rgba(46, 49, 146, .9)),
+        url(../img/ds/overlay.png);
+    background-image: linear-gradient(225deg, rgba(27, 255, 255, .8),
+        rgba(46, 49, 146, .9)),
+        background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, 2px, cover;
+}
+.plano-de-ensino .conteudo .desenvolvimento-metodologico strong {
+    color: rgba(46, 49, 146, 1);
+    font: 1.1em 'Roboto Slab', serif;
+}
+
+/*sistema de avaliacao*/
+.plano-de-ensino .conteudo .accordion:nth-child(8).active{
+    margin-bottom: .2em;
+}
+.plano-de-ensino .conteudo .accordion:nth-child(8) {
+    background-image: -webkit-linear-gradient(225deg, rgba(99, 175, 92, 0.8),
+        rgba(25, 124, 56, 0.9)),
+        url(../img/ds/overlay.png);
+    background-image: linear-gradient(225deg, rgba(99, 175, 92, 0.8),
+        rgba(25, 124, 56, 0.9)),
+        url(../img/ds/overlay.png);
+    background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, 2px, cover;
+}
+.plano-de-ensino .conteudo .sistema-de-avaliacao td,
+.plano-de-ensino .conteudo .sistema-de-avaliacao tr{
+        border:none !important;
+}
+
+
+/*bibliografia*/
+.plano-de-ensino .conteudo .accordion:nth-child(10) {
+    background-image: -webkit-linear-gradient(225deg, rgba(237, 28, 36, .85),
+        rgba(102, 8, 8, .95)),
+        url(../img/ds/overlay.png);
+    background-image: linear-gradient(225deg, rgba(237, 28, 36, .85),
+        rgba(102, 8, 8, .95)),
+        url(../img/ds/overlay.png);
+    background-position: 0px 0px, 0px 0px, 50% 50%;
+    background-size: auto, 2px, cover;
+}
+.plano-de-ensino .conteudo .bibliografia {
+    position: relative;
+}
+.plano-de-ensino .conteudo .bibliografia .ref-basica {
+    margin-left: 2.5em;
+    position: relative;
+    min-height: 5em;
+}
+.plano-de-ensino .conteudo .bibliografia .ref-basica::before {
+    font: 1em 'Roboto Condensed', sans-serif;
+    background-color: rgba(102, 8, 8, .9);
+    -webkit-transform:translate(-3.5em, 0) rotate(180deg);
+    -moz-transform:translate(-3.5em, 0) rotate(180deg);
+    -o-transform: translate(-3.5em, 0) rotate(180deg);
+    padding: .5em .4em 0 .4em;
+    position: absolute;
+    white-space:nowrap;
+    writing-mode:tb-rl;
+    content: "Básica";
+    display:block;
+    color: #fff;
+    height:100%;
+    min-height: 5em;
+    width:auto;
+    left: 0;
+    top: 0;
+}
+.plano-de-ensino .conteudo .bibliografia .ref-complementar {
+    margin-left: 2.5em;
+    position: relative;
+    min-height: 5em;
+}
+.plano-de-ensino .conteudo .bibliografia .ref-complementar::before {
+    font: 1em 'Roboto Condensed', sans-serif;
+    background-color: rgba(130, 25, 25, .9);
+    -webkit-transform:translate(-3.5em, 0) rotate(180deg);
+    -moz-transform:translate(-3.5em, 0) rotate(180deg);
+    -o-transform: translate(-3.5em, 0) rotate(180deg);
+    padding: .5em .4em 0 .4em;
+    position: absolute;
+    white-space:nowrap;
+    writing-mode:tb-rl;
+    content: "Complementar";
+    display:block;
+    color: #fff;
+    height:100%;
+    min-height: 5em;
+    width:auto;
+    left: 0;
+    top: 0;
+}
+.plano-de-ensino .conteudo .bibliografia .ref-sugerida {
+    margin-left: 2.5em;
+    position: relative;
+    min-height: 5em;
+}
+.plano-de-ensino .conteudo .bibliografia .ref-sugerida::before {
+    font: 1em 'Roboto Condensed', sans-serif;
+    background-color: rgba(171, 44, 44, .9);
+    -webkit-transform:translate(-3.5em, 0) rotate(180deg);
+    -moz-transform:translate(-3.5em, 0) rotate(180deg);
+    -o-transform: translate(-3.5em, 0) rotate(180deg);
+    padding: .5em .4em 0 .4em;
+    position: absolute;
+    white-space:nowrap;
+    writing-mode:tb-rl;
+    content: "Sugerida";
+    display:block;
+    color: #fff;
+    height:100%;
+    min-height: 5em;
+    width:auto;
+    left: 0;
+    top: 0;
+}
+
+/*accordeon aberto e quando passa mouse em cima*/
+.plano-de-ensino .conteudo .conteudo .active,
+.plano-de-ensino .conteudo .conteudo .accordion:hover {
+    background-color: #ccc;
+}
+

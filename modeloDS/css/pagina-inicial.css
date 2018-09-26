@@ -1,0 +1,272 @@
+/*************************
+Criado por Diogo Saúde
+Css para Pagina Inicial
+Modelo DS
+v1.0
+**************************/
+
+body.noteditmode {}
+body.modeloDS .pagina-inicial {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    background: #bd2429;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    font: 115% 'Roboto', sans-serif;
+}
+body.modeloDS .pagina-inicial::after {
+    background-image: url(../../img/ds/pagina-inicial/textura-fundo.svg);
+    background-repeat: repeat;
+    position: absolute;
+    height: 100%;
+    margin: 0;
+    content: '';
+    width: 14.48em;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+body.modeloDS .pagina-inicial header {
+    width: 100%;
+    padding: 3em 0;
+}
+
+/*logo do ead iesb*/
+
+body.modeloDS .pagina-inicial header .img-logo {
+    background-image: url(../img/ds/ead-iesb-logo.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 3em;
+    margin: 1.5em;
+}
+
+/*  titulo ao lado da logo do iesb*/
+body.modeloDS .pagina-inicial header h2 {
+    font-family: 'Roboto' sans-serif;
+    -webkit-transform: translate(19em, 4.2em);
+    -ms-transform: translate(19em, 4.2em);
+    transform: translate(19em, 4.2em);
+    position: absolute;
+    color: #ffffff;
+    font-size: 1em;
+    height: 1.5em;
+    font-weight: 300;
+    top: 0;
+}
+body.modeloDS .pagina-inicial header h2::before {
+    content: "| ";
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1.1em;
+    height: 1.5em;
+    width: 1em;
+    top: 0;
+}
+body.modeloDS .pagina-inicial #containerdiv {
+    background: none;
+    border: none;
+    z-index: 3;
+}
+
+/*area dos cartoes*/
+body.modeloDS .pagina-inicial ul#content_listContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    min-height: 36em;
+    z-index: 1;
+    background: transparent;
+}
+/*esconde o ultimo cartao, que é o link para aulas*/
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:last-child {
+    display: none;
+}
+/*cartao*/
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read {
+    background-color: #ffffff;
+    max-width: 11em;
+    width: 100%;
+    min-height: 14em;
+    -webkit-box-shadow: 0 .2em .6em #615d5d;
+    box-shadow: 0 .2em .6em #615d5d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    border: 0;
+}
+/*passar mouse sobre o cartao*/
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0 0.2em 1em #464343;
+    box-shadow: 0 0.2em 1em #464343;
+    -webkit-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+}
+/*conteudo cartao*/
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix {
+    background-color: #fff;
+    z-index: 3;
+    height: 11.5em;
+    -webkit-transform: translateY(-0.5em);
+    -ms-transform: translateY(-0.5em);
+    transform: translateY(-0.5em);
+    width: 90%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+}
+/*esconde icones padrao*/
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix img[title="item vinculado"] {
+    display: none;
+}
+/*imagem do cartao*/
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3::before {
+    height: 7em;
+    content: '';
+    position: relative;
+    background-color: #d1d1d1;
+    background-attachment: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*titulo do cartao*/
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span {
+    color: #615d5d;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Roboto' sans-serif;
+    line-height: 1.5em;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+/*linha vermelha no fim do cartao*/
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 span::after {
+    position: absolute;
+    content: "";
+    height: 0.15em;
+    width: 80%;
+    left: 0;
+    bottom: 0;
+    background-color: #cc0000;
+    transform: translate(1em, 1em);
+    -webkit-transform: translate(1em, 1em);
+    -ms-transform: translate(1em, 1em);
+}
+body.modeloDS .pagina-inicial .cartao {}
+body.modeloDS .pagina-inicial .cartao:hover {}
+body.modeloDS .pagina-inicial .conteudo-cartao {}
+body.modeloDS .pagina-inicial .img-cartao {}
+body.modeloDS .pagina-inicial .img-cartao::after {
+    content: '';
+    height: 0.15em;
+    background-color: #cc0000;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+body.modeloDS .pagina-inicial .label {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    transform: translate(0, -1em);
+    -webkit-transform: translate(0, -1em);
+    -ms-transform: translate(0, -1em);
+    color: #fff;
+    font-size: .4em;
+    line-height: 2.5em;
+    border-radius: 1em;
+    background-color: #cc0000;
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.aulas::before {
+    background-image: url(../../img/ds/pagina-inicial/aulas.jpg)
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.calendario::before {
+    background-image: url(../../img/ds/pagina-inicial/calendario.jpg)
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.novidades::before {
+    background-image: url(../../img/ds/pagina-inicial/novidades.jpg)
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.forum-de-duvidas::before {
+    background-image: url(../../img/ds/pagina-inicial/forum-de-duvidas.jpg)
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.encontro-virtual::before {
+    background-image: url(../../img/ds/pagina-inicial/encontro-virtual.jpg)
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.biblioteca-virtual::before {
+    background-image: url(../../img/ds/pagina-inicial/biblioteca-virtual.jpg)
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.notas::before {
+    background-image: url(../../img/ds/pagina-inicial/notas.jpg)
+}
+body.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.avaliacoes::before {
+    background-image: url(../../img/ds/pagina-inicial/avaliacoes.jpg)
+}

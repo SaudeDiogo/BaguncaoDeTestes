@@ -1,0 +1,9 @@
+<svg width="420px" height="420px" viewBox="0 0 420 420" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="error">
+            <circle id="Oval" fill="#D75A4A" fill-rule="nonzero" cx="210" cy="210" r="210"></circle>
+            <polyline id="Shape" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" points="100 100 210 210 320 320"></polyline>
+            <polyline id="Shape" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" points="320 100 210 ,210 100 320"></polyline>
+        </g>
+    </g>
+</svg>
