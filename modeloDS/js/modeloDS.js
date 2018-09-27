@@ -41,7 +41,7 @@ var tagH3 = document.querySelectorAll('body.noteditmode.modeloDS .pagina-inicial
 if (conteudoH3[0].innerText === "Aulas") {
     (tagH3[0]).addClassName('aulas');
 }
-if (conteudoH3[1].innerText === "Calendário") {
+if (conteudoH3[1].innerText === "Calendário Acadêmico") {
     (tagH3[1]).addClassName('calendario');
 }
 if (conteudoH3[2].innerText === "Novidades") {
