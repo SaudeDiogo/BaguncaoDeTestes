@@ -33,10 +33,12 @@ if (document.querySelector('title').innerHTML === "Início – EAD-ModeloDS") {
     document.querySelector('.shadow').classList.add('pagina-inicial'); //inserindo classe da pagina inicial
 }
 
+object.onload = function(){
 
 if (document.querySelector('#anonymous_element_18').innerHTML === "Aulas") {
     document.querySelector('#anonymous_element_18').classList.add('aulas');
 }
+};
 // inicio personalização da turma
 //
 //document.getElementById('courseMapButton').addClass('hideoff'); //esconder icones
