@@ -32,33 +32,41 @@ document.body.classList.add('modeloDS'); //inserindo classe do modeloDS
 if (document.querySelector('title').innerHTML === "Início – EAD-ModeloDS") {
     document.querySelector('.shadow').classList.add('pagina-inicial'); //inserindo classe da pagina inicial
 }
-
-
-var conteudoH3 = document.querySelectorAll('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span');
+{
+var conteudoH3 = document.querySelectorAll("body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span");
 var tagH3 = document.querySelectorAll('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3');
+
 if (conteudoH3[0].innerHTML === "Aulas") {
     (tagH3[0]).addClassName('aulas');
-} else if (conteudoH3[1].innerHTML === "Calendário") {
+}
+if (conteudoH3[1].innerHTML === "Calendário") {
     (tagH3[1]).addClassName('calendario');
 
-} else if (conteudoH3[2].innerHTML === "Novidades") {
+}
+if (conteudoH3[2].innerHTML === "Novidades") {
     (tagH3[2]).addClassName('novidades');
 
-} else if (conteudoH3[3].innerHTML === "Fórum de Dúvidas") {
+}
+if (conteudoH3[3].innerHTML === "Fórum de Dúvidas") {
     (tagH3[3]).addClassName('forum-de-duvidas');
 
-} else if (conteudoH3[4].innerHTML === "Encontro Virtual") {
+}
+if (conteudoH3[4].innerHTML === "Encontro Virtual") {
     (tagH3[4]).addClassName('encontro-virtual');
 
-} else if (conteudoH3[5].innerHTML === "Biblioteca Virtual") {
+}
+if (conteudoH3[5].innerHTML === "Biblioteca Virtual") {
     (tagH3[5]).addClassName('biblioteca-virtual');
 
-} else if (conteudoH3[6].innerHTML === "Notas") {
+}
+if (conteudoH3[6].innerHTML === "Notas") {
     (tagH3[6]).addClassName('notas');
 
-} else if (conteudoH3[7].innerHTML === "Avaliações") {
+}
+if (conteudoH3[7].innerHTML === "Avaliações") {
     (tagH3[7]).addClassName('avaliacoes');
-};
+}
+}
 // inicio personalização da turma
 //
 //document.getElementById('courseMapButton').addClass('hideoff'); //esconder icones
