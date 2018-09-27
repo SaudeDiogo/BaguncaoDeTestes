@@ -93,8 +93,8 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer {
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    height: inherit;
     background: transparent;
+    min-height: 38em;
 }
 
 /*esconde o ultimo cartao, que é o link para aulas*/
