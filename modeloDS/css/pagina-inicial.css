@@ -140,7 +140,7 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
 
 /*imagem do cartao*/
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3{
- float: none;
+    float: none;
     display: flex;
     width: 100%;
     position: relative;
@@ -150,7 +150,7 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
     align-self: center;
 }
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3::before {
-    height: 7em;
+    height: 6em;
     content: '';
     position: relative;
     width: 100%;
