@@ -176,7 +176,7 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
 
 /*titulo do cartao*/
 
-body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a > span {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span {
     color: #615d5d;
     font-size: 1em;
     font-weight: 400;
@@ -190,7 +190,7 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
 
 /*linha vermelha no fim do cartao*/
 
-body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a > span::after {
+body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span::after {
     position: absolute;
     content: "";
     height: 0.15em;
