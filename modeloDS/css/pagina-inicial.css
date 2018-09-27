@@ -232,33 +232,33 @@ body.noteditmode.modeloDS .pagina-inicial .label {
 /*imagem dos cartoes*/
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.aulas::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/aulas.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/aulas.jpg?raw=true)
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.calendario::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/calendario.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/calendario.jpg?raw=true)
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.novidades::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/novidades.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/novidades.jpg?raw=true)
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.forum-de-duvidas::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/forum-de-duvidas.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/forum-de-duvidas.jpg?raw=true)
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.encontro-virtual::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/encontro-virtual.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/encontro-virtual.jpg?raw=true)
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.biblioteca-virtual::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/biblioteca-virtual.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/biblioteca-virtual.jpg?raw=true)
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.notas::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/notas.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/notas.jpg?raw=true)
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3.avaliacoes::before {
-    background-image: url(https: //github.com/SaudeDiogo/SyncMe/blob/SyncMe/imgs/pagina-inicial/avaliacoes.jpg?raw=true)
+    background-image: url(https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/imgs/pagina-inicial/avaliacoes.jpg?raw=true)
 }
