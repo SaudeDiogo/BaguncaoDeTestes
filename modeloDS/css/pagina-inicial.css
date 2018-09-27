@@ -109,7 +109,7 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
     background-color: #ffffff;
     max-width: 11em;
     width: 100%;
-    min-height: 14em;
+    height: 14em;
     box-shadow: 0 .2em .6em #615d5d;
     display: flex;
     flex-direction: column;
@@ -133,9 +133,8 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix {
     background-color: #fff;
-    height: 11.5em;
-    transform: translateY(-0.5em);
-    width: 90%;
+    height: 100%;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -143,6 +142,7 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    padding: 0;
 }
 
 /*esconde icones padrao*/
@@ -157,11 +157,12 @@ body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.r
     height: 7em;
     width: 100%;
     content: '';
-    position: relative;
+    position: absolute;
     background-color: #d1d1d1;
-    background-attachment: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    left: 0;
 }
 
 body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3::after {
