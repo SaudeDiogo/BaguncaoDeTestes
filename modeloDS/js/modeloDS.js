@@ -34,24 +34,30 @@ if (document.querySelector('title').innerHTML === "Início – EAD-ModeloDS") {
 }
 
 
-var conteudoH3 = document.querySelector('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span');
-var tagH3 = document.querySelector('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3');
-if (conteudoH3.innerHTML === "Aulas") {
-    (tagH3).addClassName('aulas');
-} else if (conteudoH3.innerHTML === "Calendário") {
-    (tagH3).addClassName('calendario');
-} else if (conteudoH3.innerHTML === "Novidades") {
-    (tagH3).addClassName('novidades');
-} else if (conteudoH3.innerHTML === "Fórum de Dúvidas") {
-    (tagH3).addClassName('forum-de-duvidas');
-} else if (conteudoH3.innerHTML === "Encontro Virtual") {
-    (tagH3).addClassName('encontro-virtual');
-} else if (conteudoH3.innerHTML === "Biblioteca Virtual") {
-    (tagH3).addClassName('biblioteca-virtual');
-} else if (conteudoH3.innerHTML === "Notas") {
-    (tagH3).addClassName('notas');
-} else if (conteudoH3.innerHTML === "Avaliações") {
-    (tagH3).addClassName('avaliacoes');
+var conteudoH3 = document.querySelectorAll('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span');
+var tagH3 = document.querySelectorAll('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3');
+if (conteudoH3[0].innerHTML === "Aulas") {
+    (tagH3[0]).addClassName('aulas');
+} else if (conteudoH3[1].innerHTML === "Calendário") {
+    (tagH3[1]).addClassName('calendario');
+
+} else if (conteudoH3[2].innerHTML === "Novidades") {
+    (tagH3[2]).addClassName('novidades');
+
+} else if (conteudoH3[3].innerHTML === "Fórum de Dúvidas") {
+    (tagH3[3]).addClassName('forum-de-duvidas');
+
+} else if (conteudoH3[4].innerHTML === "Encontro Virtual") {
+    (tagH3[4]).addClassName('encontro-virtual');
+
+} else if (conteudoH3[5].innerHTML === "Biblioteca Virtual") {
+    (tagH3[5]).addClassName('biblioteca-virtual');
+
+} else if (conteudoH3[6].innerHTML === "Notas") {
+    (tagH3[6]).addClassName('notas');
+
+} else if (conteudoH3[7].innerHTML === "Avaliações") {
+    (tagH3[7]).addClassName('avaliacoes');
 };
 // inicio personalização da turma
 //
