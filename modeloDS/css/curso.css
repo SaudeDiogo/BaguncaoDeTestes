@@ -39,7 +39,6 @@ body.noteditmode.modeloDS #pageTitleText span::after {
     height: 4px;
     margin: 30px auto 20px;
     border-radius: 5px;
-    background-image: -webkit-linear-gradient(270deg, #fff, #fff);
     background-image: linear-gradient(180deg, #fff, #fff);
     text-align: center;
 }
