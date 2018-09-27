@@ -34,8 +34,8 @@ if (document.querySelector('title').innerHTML === "Início – EAD-ModeloDS") {
 }
 
 
-if (document.querySelector('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span').innerHTML === "Aulas") {
-    document.querySelector('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3').className('aulas');
+if (document.querySelector('#anonymous_element_18').innerHTML === "Aulas") {
+    document.querySelector('#anonymous_element_18').classList.add('aulas');
 }
 // inicio personalização da turma
 //
