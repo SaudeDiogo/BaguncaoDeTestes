@@ -2,8 +2,8 @@
 Criado por Diogo Saúde
 JS para modelo de turma
 Modelo DS
-producao    https://cdn.rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/js/modeloDS.js
-dev         https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/js/modeloDS.js
+producao        https://cdn.rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/js/modeloDS.js
+dev             https://rawgit.com/SaudeDiogo/SyncMe/SyncMe/modeloDS/js/modeloDS.js
 **************************/
 
 // inserindo modelo-DS em todas as paginas da turma ModeloDS
@@ -69,4 +69,9 @@ if (document.querySelector('title').innerHTML === "Início – EAD-ModeloDS") {
         (tagH3[7]).addClassName('avaliacoes');
     }
 }
+//executa apenas na página plano de ensino da turma modeloDS
+//
+else if (document.querySelector('title').innerHTML === "Plano de Ensino – EAD-ModeloDS") {
 
+
+}
