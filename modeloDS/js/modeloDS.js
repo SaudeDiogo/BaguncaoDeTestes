@@ -34,10 +34,25 @@ if (document.querySelector('title').innerHTML === "Início – EAD-ModeloDS") {
 }
 
 
-
-if (document.getElementById('anonymous_element_18').innerHTML === "Aulas") {
-    document.getElementById('anonymous_element_18').classList.add('aulas');
-}
+var conteudoH3 = document.querySelector('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3 a span');
+var tagH3 = document.querySelector('body.noteditmode.modeloDS .pagina-inicial ul#content_listContainer li.clearfix.read div.item.clearfix h3');
+if (conteudoH3.innerHTML === "Aulas") {
+    (tagH3).addClassName('aulas');
+} else if (conteudoH3.innerHTML === "Calendário") {
+    (tagH3).addClassName('calendario');
+} else if (conteudoH3.innerHTML === "Novidades") {
+    (tagH3).addClassName('novidades');
+} else if (conteudoH3.innerHTML === "Fórum de Dúvidas") {
+    (tagH3).addClassName('forum-de-duvidas');
+} else if (conteudoH3.innerHTML === "Encontro Virtual") {
+    (tagH3).addClassName('encontro-virtual');
+} else if (conteudoH3.innerHTML === "Biblioteca Virtual") {
+    (tagH3).addClassName('biblioteca-virtual');
+} else if (conteudoH3.innerHTML === "Notas") {
+    (tagH3).addClassName('notas');
+} else if (conteudoH3.innerHTML === "Avaliações") {
+    (tagH3).addClassName('avaliacoes');
+};
 // inicio personalização da turma
 //
 //document.getElementById('courseMapButton').addClass('hideoff'); //esconder icones
